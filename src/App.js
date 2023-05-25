@@ -111,7 +111,7 @@ class App extends Component {
     const size = input.length;
     console.log(size);
 
-    if (size > 0) {
+    if (isRunning === true) {
       count = setInterval(() => {
         this.setState(
           (prevState) => ({ timer: prevState.timer + 1 }),
