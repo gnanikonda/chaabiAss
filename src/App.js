@@ -58,7 +58,7 @@ class App extends Component {
       );
     }
   };
-  onChangeInput = () => {
+  onChangeInput = (event) => {
     const {
       displayText,
       input,
@@ -104,14 +104,17 @@ class App extends Component {
   };
 
   increaseTime = (event) => {
-    const { timer, mins, isRunning } = this.state;
+    const { timer, mins, isRunning, input } = this.state;
     const enteredInput1 = event.target.value;
     let seconds;
     let count;
-    if (isRunning === true) {
+    const size = input.length;
+    console.log(size);
+
+    if (size > 0) {
       count = setInterval(() => {
         this.setState(
-          (prevState) => ({ timer: prevState.timer + 10 }),
+          (prevState) => ({ timer: prevState.timer + 1 }),
           this.checkTime
         );
       }, 1000);
