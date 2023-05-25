@@ -36,3 +36,75 @@
     transform: rotate(360deg);
   }
 }
+
+.maindiv {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 5px;
+  background-color: rgb(98, 199, 206);
+}
+
+.paragraph {
+  height: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border: solid lightblue 2px;
+  padding: 10px;
+  border: none;
+  background-color: rgb(127, 127, 173);
+}
+
+.inputStyles {
+  font-size: 30px;
+  height: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border: solid lightblue 2px;
+  padding: 10px;
+  text-align: center;
+  background-color: lightgreen;
+  border: none;
+}
+.inputStyles1 {
+  font-size: 30px;
+  height: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border: solid lightblue 2px;
+  padding: 10px;
+  text-align: center;
+  background-color: lightcoral;
+  border-color: lightcoral;
+  outline: none;
+}
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+p {
+  padding: 30px;
+}
+.selectdiv {
+  background-color: rgb(58, 97, 74);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+.selectItem {
+  background-color: rgb(58, 97, 74);
+  margin-left: 10px;
+}
